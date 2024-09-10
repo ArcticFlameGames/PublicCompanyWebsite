@@ -22,7 +22,7 @@ const foundersData = [
 
 const App: React.FC = () => {
   return (
-    <div className="font-sans">
+    <div className="font-sans" id="home">
       <NavBar logoPath="/images/LogoWithText.png" />
       <HeroSection 
         title="Arctic Flame Games Inc."

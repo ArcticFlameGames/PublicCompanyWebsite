@@ -13,7 +13,7 @@ const NavBar: React.FC<NavBarProps> = ({ logoPath }) => {
       </div>
       {/* Navigation Links */}
       <ul className="flex space-x-8 mx-auto">
-        <li><a href="#" className="hover:text-gray-400">Home</a></li>
+        <li><a href="#home" className="hover:text-gray-400">Home</a></li>
         <li><a href="#games" className="hover:text-gray-400">Games</a></li>
         <li><a href="#founders" className="hover:text-gray-400">About Us</a></li>
       </ul>
