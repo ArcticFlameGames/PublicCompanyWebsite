@@ -34,11 +34,15 @@ const App: React.FC = () => {
           gameTitle="Arcanus Legends"
           description="A new online co-op action RPG dungeon crawler where you are a creation of a fallen god, craft any spell imaginable and rebuild villages while facing epic challenges in a magical universe."
           image="/images/arcanuslegends.jpg"
+          linkText='View Pitch Deck'
+          link='https://docs.google.com/presentation/d/1Nut2x-v8o64IZPhK8VzlFm1pyZ8eUWxAlksQAzmTTi4/edit?usp=sharing'
         />
         <GameSection 
           gameTitle="Pack It!"
           description="Get ready to test your packing skills in Pack It, the ultimate puzzle game! We've added exciting new features to enhance your gaming experience."
           image="/images/packit-featured.png"
+          linkText='Download on Google Play'
+          link='https://play.google.com/store/apps/details?id=com.curious.code.concoction.packit'
         />
       </div>
       <div className="bg-gray-100" id="founders">
