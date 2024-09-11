@@ -1,9 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar.tsx';
 import HeroSection from './components/HeroSection.tsx';
 import GameSection from './components/GameSection.tsx';
 import FoundersSection from './components/FounderSection.tsx';
 import Footer from './components/Footer.tsx';
+import AccountDeletion from './pages/AccountDeletion.tsx';
 
 const foundersData = [
   {
@@ -20,24 +22,24 @@ const foundersData = [
   },
 ];
 
-const App: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
     <div className="font-sans" id="home">
       <NavBar logoPath="/images/LogoWithText.png" />
-      <HeroSection 
+      <HeroSection
         title="Arctic Flame Games Inc."
         subtitle="Ignite Your Journey, Embrace the Flame!"
         logoPath="/images/ArcticFlameGames-Logo-NoBackground.png"
       />
       <div className="bg-gray-100" id="games">
-        <GameSection 
+        <GameSection
           gameTitle="Arcanus Legends"
           description="A new online co-op action RPG dungeon crawler where you are a creation of a fallen god, craft any spell imaginable and rebuild villages while facing epic challenges in a magical universe."
           image="/images/arcanuslegends.jpg"
           linkText='View Pitch Deck'
           link='https://docs.google.com/presentation/d/1Nut2x-v8o64IZPhK8VzlFm1pyZ8eUWxAlksQAzmTTi4/edit?usp=sharing'
         />
-        <GameSection 
+        <GameSection
           gameTitle="Pack It!"
           description="Get ready to test your packing skills in Pack It, the ultimate puzzle game! We've added exciting new features to enhance your gaming experience."
           image="/images/packit-featured.png"
@@ -50,6 +52,21 @@ const App: React.FC = () => {
       </div>
       <Footer />
     </div>
+  );
+}
+
+const AccountDeletionPage: React.FC = () => {
+  return <AccountDeletion />;
+};
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path='/account-deletion' element={<AccountDeletionPage />} />
+      </Routes>
+    </Router>
   );
 };
 
