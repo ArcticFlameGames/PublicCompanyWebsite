@@ -6,6 +6,7 @@ import GameSection from './components/GameSection.tsx';
 import FoundersSection from './components/FounderSection.tsx';
 import Footer from './components/Footer.tsx';
 import AccountDeletion from './pages/AccountDeletion.tsx';
+import SocialMediaSection from './components/SocialMediaSection.tsx';
 
 const foundersData = [
   {
@@ -49,6 +50,9 @@ const HomePage: React.FC = () => {
       </div>
       <div className="bg-gray-100" id="founders">
         <FoundersSection founders={foundersData} />
+      </div>
+      <div id="socials">
+        <SocialMediaSection />
       </div>
       <Footer />
     </div>
