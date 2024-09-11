@@ -3,7 +3,7 @@ import { FaDiscord, FaYoutube } from 'react-icons/fa';
 
 const SocialMediaSection: React.FC = () => {
   return (
-    <section className="py-8 bg-gray-800">
+    <section className="py-8">
       <h2 className="text-3xl font-bold text-center mb-4">Follow Us</h2>
       <div className="flex justify-center space-x-8">
         <a href="https://discord.gg/k44Sfuaxxr" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">

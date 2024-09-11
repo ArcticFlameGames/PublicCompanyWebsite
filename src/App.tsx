@@ -7,6 +7,7 @@ import FoundersSection from './components/FounderSection.tsx';
 import Footer from './components/Footer.tsx';
 import AccountDeletion from './pages/AccountDeletion.tsx';
 import SocialMediaSection from './components/SocialMediaSection.tsx';
+import CompanyStorySection from './components/CompanyStorySection.tsx';
 
 const foundersData = [
   {
@@ -39,6 +40,7 @@ const HomePage: React.FC = () => {
           image="/images/arcanuslegends.jpg"
           linkText='View Pitch Deck'
           link='https://docs.google.com/presentation/d/1Nut2x-v8o64IZPhK8VzlFm1pyZ8eUWxAlksQAzmTTi4/edit?usp=sharing'
+          isGooglePlayLink={false}
         />
         <GameSection
           gameTitle="Pack It!"
@@ -46,8 +48,12 @@ const HomePage: React.FC = () => {
           image="/images/packit-featured.png"
           linkText='Download on Google Play'
           link='https://play.google.com/store/apps/details?id=com.curious.code.concoction.packit'
+          isGooglePlayLink={true}
         />
       </div>
+      <div className="bg-gray-300" id="story">
+        <CompanyStorySection />
+        </div>
       <div className="bg-gray-100" id="founders">
         <FoundersSection founders={foundersData} />
       </div>
