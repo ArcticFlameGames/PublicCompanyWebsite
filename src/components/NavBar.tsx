@@ -6,7 +6,7 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ logoPath }) => {
   return (
-    <nav className="bg-gray-900 text-white p-4 flex items-center justify-between">
+    <nav className="bg-sky-900 text-white p-4 flex items-center justify-between">
       {/* Logo */}
       <div className="flex-shrink-0">
         <img src={logoPath} alt="Logo" className="max-h-[50px]" />

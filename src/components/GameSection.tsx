@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiGoogleplay } from 'react-icons/si';
+import { SiGoogleplay, SiSteam } from 'react-icons/si';
 
 interface GameSectionProps {
   gameTitle: string;
@@ -23,7 +23,9 @@ const GameSection: React.FC<GameSectionProps> = ({ gameTitle, description, image
             {linkText}
           </a>
         ) : (
-          <a className="bg-slate-500 text-white rounded p-4 hover:bg-slate-600" href={link}>{linkText}</a>
+            <a className="bg-sky-600 text-white rounded p-4 hover:bg-sky-700 inline-flex items-center" href={link}>
+              <SiSteam size={24} className="text-white-500 hover:text-white-700 mr-2" />{linkText}
+            </a>
         )}
       </div>
     </section>
