@@ -26,14 +26,14 @@ const foundersData = [
 
 const HomePage: React.FC = () => {
   return (
-    <div className="font-sans" id="home">
+    <div className="font-sans bg-slate-950 text-white" id="home">
       <NavBar logoPath="/images/LogoWithText.png" />
       <HeroSection
         title="Arctic Flame Games Inc."
         subtitle="Ignite Your Journey, Embrace the Flame!"
         logoPath="/images/ArcticFlameGames-Logo-NoBackground.png"
       />
-      <div className="bg-gray-100" id="games">
+      <div id="games">
         <GameSection
           gameTitle="Arcanus Legends"
           description="Arcanus Legends craft any spell imaginable and rebuild villages while facing epic challenges in a magical universe. Arcanus Legends is a single player & online co-op action RPG."
@@ -52,10 +52,10 @@ const HomePage: React.FC = () => {
           reversed={true}
         />
       </div>
-      <div className="bg-gray-300" id="story">
+      <div id="story">
         <CompanyStorySection />
-        </div>
-      <div className="bg-gray-100" id="founders">
+      </div>
+      <div id="founders">
         <FoundersSection founders={foundersData} />
       </div>
       <div id="socials">
