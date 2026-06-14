@@ -8,15 +8,13 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ title, subtitle, logoPath }) => {
   return (
-    <section className="h-[calc(100vh-200px)] bg-cover bg-center justify-center items-center text-black flex">
-      {/* Logo */}
-      <div className="flex-shrink-0 mr-4">
-        <img src={logoPath} alt="Logo" className="max-h-[200px]" />
+    <section className="min-h-[85vh] bg-cover bg-center justify-center items-center text-black flex flex-col sm:flex-row px-8 gap-8">
+      <div className="flex-shrink-0">
+        <img src={logoPath} alt="Arctic Flame Games logo" className="max-h-[200px]" />
       </div>
-      {/* Text Content */}
-      <div className="text-left">
-        <h1 className="text-5xl font-bold mb-4">{title}</h1>
-        <p className="text-2xl">{subtitle}</p>
+      <div className="text-center sm:text-left">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
+        <p className="text-xl md:text-2xl">{subtitle}</p>
       </div>
     </section>
   );

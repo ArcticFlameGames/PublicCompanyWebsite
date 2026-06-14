@@ -13,7 +13,7 @@ const foundersData = [
   {
     name: 'Matthieu Smith',
     title: 'Co-Founder & CTO',
-    description: 'Matthieu is an accomplished leader in tech, proven track record of leading high-performing teams and managers to success. With 10 years of experience in software development, I possess a strong background in mobile native development, game development, front-end development and backend development.',
+    description: 'Matthieu is an accomplished leader in tech with a proven track record of leading high-performing teams to success. With 10 years of experience in software development, he has a strong background in mobile native development, game development, front-end development and backend development.',
     image: '/images/MattPic.jpg',
   },
   {
@@ -49,6 +49,7 @@ const HomePage: React.FC = () => {
           linkText='Download on Google Play'
           link='https://play.google.com/store/apps/details?id=com.curious.code.concoction.packit'
           isGooglePlayLink={true}
+          reversed={true}
         />
       </div>
       <div className="bg-gray-300" id="story">
