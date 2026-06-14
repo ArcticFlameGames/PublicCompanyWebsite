@@ -32,3 +32,9 @@ coverage/
 
 # Local environment files
 *.local
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Compiled CSS (legacy CRA output)
+public/output.css
