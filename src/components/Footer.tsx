@@ -8,6 +8,10 @@ const Footer: React.FC = () => {
       <a href="mailto:contactus@arcticflamegames.com" className="text-sm text-sky-400 hover:text-sky-300 transition-colors duration-200">
         contactus@arcticflamegames.com
       </a>
+      <div className="mt-3 flex justify-center gap-6 text-sm">
+        <a href="/privacy-policy" className="text-slate-400 hover:text-slate-200 transition-colors duration-200">Privacy Policy</a>
+        <a href="/account-deletion" className="text-slate-400 hover:text-slate-200 transition-colors duration-200">Account Deletion</a>
+      </div>
     </footer>
   );
 };

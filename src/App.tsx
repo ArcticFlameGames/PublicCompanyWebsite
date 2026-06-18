@@ -6,6 +6,7 @@ import GameSection from './components/GameSection.tsx';
 import FoundersSection from './components/FounderSection.tsx';
 import Footer from './components/Footer.tsx';
 import AccountDeletion from './pages/AccountDeletion.tsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
 import SocialMediaSection from './components/SocialMediaSection.tsx';
 import CompanyStorySection from './components/CompanyStorySection.tsx';
 
@@ -76,6 +77,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path='/account-deletion' element={<AccountDeletionPage />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );
