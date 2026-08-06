@@ -48,7 +48,7 @@ const HomePage: React.FC = () => {
           description="Get ready to test your packing skills in Pack It, the ultimate puzzle game! We've added exciting new features to enhance your gaming experience."
           image="/images/packit-featured.png"
           linkText='Download on Google Play'
-          link='https://play.google.com/store/apps/details?id=com.curious.code.concoction.packit'
+          link='https://play.google.com/store/apps/details?id=com.arctic.flame.games.packit'
           isGooglePlayLink={true}
           reversed={true}
         />
